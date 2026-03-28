@@ -1,55 +1,46 @@
-# VisionScan: Integrated Document Processing & Classification Pipeline
+# VisionScan: Document AI Pipeline 📄🔍
 
-**Course:** Computer Vision (BYOP)  
-**Author:** Abhi Pandey (Reg No: 23BAI10909)  
+**Course:** Computer Vision (CSE3010)  
+**Slot:** F11+F12  
+**Interim Semester:** 2025-26  
+**Class Number:** BL2025260500505  
+
+**Name:** Abhi Pandey  
+**Register Number:** 23BAI10909  
+**Submitted to:** Dr. Amrita Parashar  
 **Institution:** VIT Bhopal University  
 
 ---
 
-## 📌 Project Overview
-VisionScan is an end-to-end Computer Vision pipeline designed to automate the digitization of physical documents. It addresses real-world issues like perspective distortion, noise in scanned images, and the need for automated categorization.
+### 📌 Project Overview
+VisionScan is a CV pipeline that converts messy physical scans into clean, structured digital data. It solves **perspective distortion**, **noise**, and **manual categorization** issues using advanced image processing.
 
-### Key Capabilities:
-* **Document Straightening (Perspective Transform):** Automatically detects document corners and performs a 4-point perspective wrap to create a "top-down" scan view.
-* **Image Enhancement:** Uses adaptive thresholding and Gaussian blurring to remove shadows and highlights for better readability.
-* **OCR (Optical Character Recognition):** Extracts raw text from processed images using Tesseract/EasyOCR.
-* **Classification:** Categorizes documents (e.g., Invoice, ID Card, Letter) based on extracted features and layout analysis.
-
----
-
-## 🛠️ Computer Vision Pipeline
-The project utilizes several core CV concepts covered in the course:
-
-1.  **Preprocessing:** Grayscale conversion and bilateral filtering to reduce noise while preserving edges.
-2.  **Edge Detection:** Implementation of the **Canny Edge Detection** algorithm to find document boundaries.
-3.  **Contour Analysis:** Utilizing `cv2.findContours()` to identify the largest quadrilateral in the frame.
-4.  **Geometric Transformations:** Applying a **Perspective Transform** matrix to rectify warped document images.
-5.  **Thresholding:** Otsu’s Binarization for high-contrast text extraction.
+### 🛠️ The CV Pipeline (Step-by-Step)
+1. **Preprocessing:** Grayscale & Bilateral Filtering (removes noise while keeping edges sharp).
+2. **Segmentation:** **Canny Edge Detection** + **Contour Analysis** to find the document's boundary.
+3. **Rectification:** **4-Point Perspective Transform** to "unwarp" the document into a flat view.
+4. **Enhancement:** **Otsu’s Binarization** & Adaptive Thresholding for high-contrast text.
+5. **Extraction & Classify:** **OCR** for text retrieval and layout analysis for document typing.
 
 ---
 
-## 🚀 Visual Results
-| Input (Warped/Noisy) | Processed (Thresholded) | Final Scanned Output |
+### 🚀 Results at a Glance
+| 1. Input (Warped) | 2. Processed (Edges) | 3. Final Output (Scan) |
 | :---: | :---: | :---: |
 | ![Input](input_image.jpeg) | ![Threshold](pre_process_image.png) | ![Output](output_image.png) |
 
+---
+
+### 📂 Quick Links
+* 💻 **[Core Logic (.ipynb)](https://github.com/Abhi4621/AbhiPandey-23BAI10909-VisionScan-CV-Pipeline/blob/main/VisionScan_An_Integrated_Document_Processing_%26_Classification_Pipeline%20(CODE).ipynb)**
+* 📝 **[Project Report (PDF)](https://github.com/Abhi4621/AbhiPandey-23BAI10909-VisionScan-CV-Pipeline/blob/main/23BAI10909_ComputerVision_BYOP%20(Report).pdf.pdf)**
 
 ---
 
-## 📂 Repository Structure
-* `VisionScan_..._(CODE).ipynb`: The primary implementation notebook containing the pipeline logic.
-* `23BAI10909_..._(Report).pdf`: Detailed technical documentation and project reflection.
-* `data/`: Sample input images used for testing.
-
----
-
-## ⚙️ Setup & Installation
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/Abhi4621/AbhiPandey-23BAI10909-VisionScan-CV-Pipeline.git](https://github.com/Abhi4621/AbhiPandey-23BAI10909-VisionScan-CV-Pipeline.git)
-   Install dependencies:
-
-Bash
+### ⚙️ Setup & Execution
+```bash
+# Clone & Install
+git clone [https://github.com/Abhi4621/AbhiPandey-23BAI10909-VisionScan-CV-Pipeline.git](https://github.com/Abhi4621/AbhiPandey-23BAI10909-VisionScan-CV-Pipeline.git)
 pip install opencv-python numpy pytesseract matplotlib
-Run the notebook:
-Open the .ipynb file in Jupyter or Google Colab and execute the cells sequentially.
+
+# Run: Open the .ipynb file in Jupyter/Colab and "Run All"
