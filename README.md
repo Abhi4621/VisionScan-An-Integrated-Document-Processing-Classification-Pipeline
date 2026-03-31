@@ -93,7 +93,7 @@ SmartScan AI is inspired by intelligent systems such as **Face Recognition Atten
 ### 🎥 Stage 3: Real-Time Extension (Live Processing)
 | 7. Capture View | 9. Final Extractions |
 | :---: | :---: | 
-| ![Capture](ocr_input.jpg) |  ![Data](live_detection_output.png) |
+| ![Capture](live_Input.jpeg) |  ![Data](live_detection_output.png) |
 
 👉 Enables live scanning similar to modern mobile scanning apps.
 
