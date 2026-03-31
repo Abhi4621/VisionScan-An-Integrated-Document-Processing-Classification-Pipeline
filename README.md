@@ -234,8 +234,8 @@ Structured Text / JSON-ready data
 
 
 🧠 Conclusion
-SmartScan AI demonstrates how classical computer vision techniques and modern deep learning models can be combined into a powerful, real-world system.
 
+SmartScan AI demonstrates how classical computer vision techniques and modern deep learning models can be combined into a powerful, real-world system.
 
 The project highlights:
 End-to-end pipeline design
