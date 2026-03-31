@@ -2,7 +2,7 @@
 
 **Course:** Computer Vision (CSE3010)  
 **Institution:** VIT Bhopal University  
-** Name:** Abhi Pandey (23BAI10909)  
+**Name:** Abhi Pandey (23BAI10909)  
 **Course:** Computer Vision (CSE3010)  
 **Slot:** F11+F12  
 **Interim Semester:** 2025-26  
